@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS Quiz</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Raleway');
+    </style>
+</head>
+<body>
+<div class="container" id="container">
+    <h1>Computer Science Quiz</h1>
+    <h2 class="top-right">SCORE: <span id="score">0</span></h2>
+    <button type="button" class="btn" id="reset_quiz">Reset Quiz</button>
+
+    <div id="q1" class="question_container" data-answered=false>
+        <h2><strong>Question 1:</strong></h2>
+        <h3 class="hidden">Score: <span id="q1_score"></span></h3>
+        <p id="question1">
+            The first electronic computer in Canada was housed in the Computer Science Department at the U of T. What
+            was
+            its name?</p>
+
+        <form id="q1__options">
+            <label>
+                <input type="radio" name="question1" value="a"> a) HAL 9000 <br>
+            </label>
+            <p class="hidden" id="q1-a"><span class="wrong_answer">Incorrect</span>: The HAL 9000 is a fictional computer from Arthur C. Clarke's 2001: A
+                Space
+                Odyssey.
+            </p>
+
+            <label>
+                <input type="radio" name="question1" value="b"> b) FERUT <br>
+            </label>
+            <p class="hidden" id="q1-b"><span class="correct_answer">Correct</span>: The machine arrived in Canada on April 30, 1952. Named FERUT (FERranti
+                U of
+                T),
+                it was used to compute changes in water levels due to the opening of the St. Lawrence Seaway.
+            </p>
+
+            <label>
+                <input type="radio" name="question1" value="c"> c) ILLIAC <br>
+            </label>
+            <p class="hidden" id="q1-c"><span class="wrong_answer">Incorrect</span>: The ILLIAC was built at the University of Illinois. It was the first
+                von
+                Neumann architecture computer built and owned by an American university. It was put into service on
+                September 22, 1952.
+            </p>
+
+            <label>
+                <input type="radio" name="question1" value="d"> d) UNIVAC <br>
+            </label>
+            <p class="hidden" id="q1-d"><span class="wrong_answer">Incorrect</span>: The UNIVAC was the first commericial computer produced in the United
+                States,
+                and was designed by J. Presper Eckert and John Mauchly. The United States Census Department received
+                delivery of the first UNIVAC in May 1952.
+            </p>
+        </form>
+
+
+        <button type="button" id="explain" class="hidden btn-info">Display Explanations</button>
+    </div>
+
+    <div id="q2" class="question_container clear" data-answered="false">
+        <h2><strong>Question 2:</strong></h2>
+        <h3 class="hidden">Score: <span id="q2_score"></span></h3>
+        <p id="question2">
+            University of Toronto Professors Kelly Gotlieb and Pat Hume are credited in the Oxford English Dictionary
+            with
+            early published use of more than 10 words used in the vocabulary of computing from their 1958 book,
+            "High-speed
+            Data Processing". Which two of the following are *not* words for which they are quoted in the OED?
+        </p>
+        <form id="q2__options" class="clear">
+            <label>
+                <input type="checkbox" name="question2" value="loop">loop <br>
+            </label>
+
+            <label>
+                <input type="checkbox" name="question2" value="inline">inline <br>
+            </label>
+
+            <label>
+                <input type="checkbox" name="question2" value="keyboard">keyboard <br>
+            </label>
+
+            <label>
+                <input type="checkbox" name="question2" value="interpreter">interpreter <br>
+            </label>
+
+            <label>
+                <input type="checkbox" name="question2" value="function">function <br>
+            </label>
+
+            <label>
+                <input type="checkbox" name="question2" value="block">block <br>
+            </label>
+
+            <label>
+                <input type="checkbox" name="question2" value="character">character <br>
+            </label>
+
+            <label>
+                <input type="checkbox" name="question2" value="variable">variable <br>
+            </label>
+            <p id="q2__response" class="hidden"></p>
+        </form>
+
+        <button type="button" id="q2__submit" class="btn">Submit Answer</button>
+    </div>
+
+    <div id="q3" class="question_container" data-answered="false">
+        <h2><strong>Question 3:</strong></h2>
+        <h3 class="hidden">Score: <span id="q3_score"></span></h3>
+        <p id="question3">
+            Match the CS Professor with his or her claim to fame
+        </p>
+        <form id="q3__people">
+            <label>
+                <input type="radio" name="q3-people" value="a"> a. Daniel Wigdor<br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-people" value="b"> b. Stephen Cook <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-people" value="c"> c. Geoff Hinton <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-people" value="d"> d. Karan Singh <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-people" value="e"> e. Diane Horton <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-people" value="f"> f. Raquel Urtasun <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-people" value="g"> g. David Levin <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-people" value="h"> h. Mike Brudno <br>
+            </label>
+        </form>
+
+        <form id="q3__fame">
+            <label>
+                <input type="radio" name="q3-fame" data-answer="d" value="">
+                <span class="q3_userAnswer q3_userAnswer"></span>
+                Academy Award for Ryan (software research and development director)<br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-fame" data-answer="h" value="">
+                <span class="q3_userAnswer"></span>
+                Scientific Director of the Centre for Computational Medicine at Sick Kids Hospital <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-fame" data-answer="g" value="">
+                <span class="q3_userAnswer"></span>
+                Associate Research Scientist at Disney Research before joining the faculty <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-fame" data-answer="e" value="">
+                <span class="q3_userAnswer"></span>
+                Winner of both the President's Teaching Award and OCUFA teaching award <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-fame" data-answer="b" value="">
+                <span class="q3_userAnswer"></span>
+                Turing Award winner for work in computational complexity<br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-fame" data-answer="f" value="">
+                <span class="q3_userAnswer"></span>
+                Canada Research Chair in Machine Learning and Computer Vision, researching self-driving cars <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-fame" data-answer="a" value="">
+                <span class="q3_userAnswer"></span>
+                Taught a first-year course while an undergraduate student in our department <br>
+            </label>
+
+            <label>
+                <input type="radio" name="q3-fame" data-answer="c" value="">
+                <span class="q3_userAnswer"></span>
+                Pioneer in machine learning, now Distinguished Researcher at Google <br>
+            </label>
+        </form>
+    </div>
+
+    <div id="q4" class="question_container" data-answered="false">
+        <form id="q4__form">
+            <h2><strong>Question 4:</strong></h2>
+            <h3 class="hidden">Score: <span id="q4_score"></span></h3>
+            <p id="question4">
+                Arrange by year of invention from oldest to newest:
+                (Drag and drop inventions to switch the order)
+            </p>
+
+            <ul id="q4__options">
+                <li data-date="1940" data-order="1" draggable="true" id="q4_1">The First Computer Network</li>
+                <li data-date="1971" data-order="6" draggable="true" id="q4_2">First Microprocessor: Intel 4004</li>
+                <li data-date="1957" data-order="4" draggable="true" id="q4_3">First Popular High-Level Language: FORTRAN
+                </li>
+                <li data-date="1953" data-order="3" draggable="true" id="q4_4">First Open Source Software: A-2 System</li>
+                <li data-date="1951" data-order="2" draggable="true" id="q4_5">First Compiler for Electronic Computer: A-0
+                    System
+                </li>
+                <li data-date="1841" data-order="0" draggable="true" id="q4_6">First Computer Program</li>
+                <li data-date="1967" data-order="5" draggable="true" id="q4_7"> Object Oriented Programming Language:
+                    Simula>
+                </li>
+            </ul>
+
+
+            <button type="button" class="btn" id="q4__submit">Submit Answer</button>
+        </form>
+    </div>
+</div>
+
+    <script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>

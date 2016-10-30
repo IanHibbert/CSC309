@@ -1,0 +1,68 @@
+Quiz Text
+
+Question 1: The first electronic computer in Canada was housed in the Computer Science Department at the U of T.  What was its name?
+
+a) HAL 9000
+Incorrect: The HAL 9000 is a fictional computer from Arthur C. Clarke's 2001: A Space Odyssey.
+
+b) FERUT
+Correct: The machine arrived in Canada on April 30, 1952.  Named FERUT (FERranti U of T), it was used to compute changes in water levels due to the opening of the St. Lawrence Seaway.
+
+c) ILLIAC
+Incorrect: The ILLIAC was built at the University of Illinois. It was the first von Neumann architecture computer built and owned by an American university. It was put into service on September 22, 1952.
+
+d) UNIVAC
+Incorrect:  The UNIVAC was the first commericial computer produced in the United States, and was designed by J. Presper Eckert and John Mauchly.  The United States Census Department received delivery of the first UNIVAC in May 1952.
+
+
+Question 2:
+University of Toronto Professors Kelly Gotlieb and Pat Hume are credited in the Oxford English Dictionary with early published use of more than 10 words used in the vocabulary of computing from their 1958 book, "High-speed Data Processing".  Which two of the following are *not* words for which they are quoted in the OED?
+
+loop
+inline
+keyboard
+interpreter
+*function
+block
+character
+*variable
+
+Responses:
+Correct: Yes!  It is hard to believe that words we take for granted in computing were once so new.
+
+One word correct: "Incorrect: You picked {correct word} correctly, but {incorrect word} is one of the words that Professors Gotlieb and Hume got credit for."
+
+Neither word correct:  "Incorrect: Both words you chose are words that Professors Gotlieb and Hume were quoted for in the OED."
+
+Selected only one word: "Your answer is incomplete.  Please select another word."
+
+Selected too many words:  "Only two words can be selected. Please try again."
+
+
+Question 3:
+Match the CS Professor with his or her claim to fame:
+
+Daniel Wigdor - Taught a first-year course while an undergraduate student in our department
+Stephen Cook - Turing Award winner for work in computational complexity
+Geoff Hinton - Pioneer in machine learning, now Distinguished Researcher at Google
+Karan Singh - Academy Award for Ryan (software research and development director)
+Diane Horton - Winner of both the President's Teaching Award and OCUFA teaching award
+Raquel Urtasun - Canada Research Chair in Machine Learning and Computer Vision, researching self-driving cars
+David Levin - Associate Research Scientist at Disney Research before joining the faculty
+Mike Brudno - Scientific Director of the Centre for Computational Medicine at Sick Kids Hospital
+
+
+Question 4:
+Arrange by year of invention from oldest to newest:
+
+The First Computer Network – 1940
+First Microprocessor: Intel 4004 – 1971
+First Popular High-Level Language: FORTRAN – 1957 (John Backus)
+First Open Source Software: A-2 System – 1953
+First Compiler for Electronic Computer: A-0 System – 1951 (Grace Hopper)
+First Computer Program – 1841  (Ada Lovelace)
+First Object Oriented Programming Language: Simula – 1967 (Ole-Johan Dahl and Kristen Nygaard)
+
+http://www.rankred.com/biggest-inventions-in-computer-science/
+
+

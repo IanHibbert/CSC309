@@ -1,0 +1,291 @@
+/*General Styles*/
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+label:hover {
+    background: #bdffdf;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+    border: 5px #5dffca solid;
+}
+
+.question_container{
+    margin: 25px 40px;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlighted{
+    background-color: rgba(67, 255, 122, 0.63);
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+.wrong_answer{
+    color: red;
+}
+
+.correct_answer{
+    color: #47ff56;
+}
+
+.selected{
+    font-weight: bolder;
+}
+
+
+/*buttons created from http://www.bestcssbuttongenerator.com/*/
+.btn {
+    background-color:#599bb3;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    padding:6px 12px;
+    text-decoration:none;
+    text-shadow:0 1px 0 #3d768a;
+}
+.btn:hover {
+    background-color:#408c99;
+}
+.btn:active {
+    position:relative;
+    top:1px;
+}
+.btn:disabled{
+    display:none;
+}
+
+
+.btn-info{
+    box-shadow: 0px 10px 14px -7px #3e7327;
+    background-color:#77b55a;
+    border-radius:4px;
+    border:1px solid #4b8f29;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:'Raleway', sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    padding:6px 12px;
+    text-decoration:none;
+    text-shadow:0 1px 0 #5b8a3c;
+}
+.btn-info:hover {
+    background-color:#72b352;
+}
+.btn-info:active {
+    position:relative;
+    top:1px;
+}
+.btn-info:disabled{
+    display:none;
+}
+
+/* ---------------------------------- */
+
+
+/*Header Styles*/
+h1{
+    text-align: center;
+    font-family: 'Bungee Inline', cursive;
+}
+
+.top-right{
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+#reset_quiz{
+    position: fixed;
+    top: 7em;
+    right: 3em;
+}
+/* ---------------------------------- */
+
+
+/*Question 1*/
+#q1{
+    background-color: rgba(192, 152, 255, 0.11);
+}
+
+#question1{
+    width: 75%;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+#q1__options{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#q1__options label{
+    line-height: 35px;
+    padding: 8px 0;
+}
+
+#q1__options p{
+    padding: 0;
+    margin: 0 auto 20px auto;
+    width: 50%;
+}
+
+#q1__options input[type="radio"] {
+    display: none;
+}
+
+/* ---------------------------------- */
+
+
+/*Question 2*/
+#q2{
+    background-color: rgba(255, 196, 66, 0.11);
+}
+
+#question2{
+    width: 80%;
+    margin: 0 auto 10px auto;
+    font-weight: 600;
+}
+
+#q2__options{
+    margin: 0 auto;
+    padding-left: 50px;
+    width: 50%;
+}
+
+#q2__options label{
+    line-height: 35px;
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    display:block;
+}
+
+#q2__options p{
+    clear: both;
+    padding-top: 20px;
+}
+
+#q2__options input{
+    display: none;
+}
+
+#q2__submit{
+    margin-left: 15px;
+}
+
+/* ---------------------------------- */
+
+
+/*Question 3*/
+.q3_userAnswer{
+    position: absolute;
+    left: 20%;
+    text-decoration: underline;
+}
+
+#q3{
+    background: rgba(128, 255, 38, 0.11);
+}
+
+#question3{
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#q3__people {
+    border-bottom: black 1px solid;
+    padding-left: 4em;
+    margin-bottom: 10px;
+
+}
+
+#q3__people label{
+    line-height: 25px;
+    display: inline-block;
+    margin: 5px 10px;
+    width: 20%;
+}
+
+#q3__people input[type="radio"] {
+
+}
+
+#q3__fame label{
+    margin:2px 0;
+    line-height: 50px;
+    text-align: center;
+    display:block;
+    font-size: 14px;
+}
+
+#q3__fame label > p{
+    margin-top: -20px;
+}
+
+
+#q3__fame input[type="radio"] {
+    display: none;
+}
+
+/* ---------------------------------- */
+
+
+/*Question 4*/
+#q4{
+    background: rgba(0, 255, 219, 0.11);
+}
+#question4{
+    width: 75%;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+#q4__options {
+    padding: 0;
+}
+
+#q4__options li{
+    text-align: center;
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+#q4__options span{
+    position: absolute;
+    left: 27%;
+    margin-top:10px;
+}
+
+
+#q4__options li:hover{
+   background: rgba(251, 255, 68, 0.42);
+}
+
+/* ---------------------------------- */
