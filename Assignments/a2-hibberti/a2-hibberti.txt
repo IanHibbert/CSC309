@@ -1,0 +1,78 @@
+Assignment 2: Developing a REST API
+
+List Applicants
+---------------
+: 6 / 6
+    - Request is handled appropriately at the server
+    - JSON is returned in the response
+    - Response is ordered by family name
+
+Grader Feedback:
+
+
+Individual Applicants
+---------------------
+: 7 / 8
+    GET by family name (2)
+    - Request is handled correctly using query arguments
+    - JSON is returned in the response
+    POST (3)
+    - Request is handled correctly
+    - TA list in memory is updated
+    - A proper response is returned
+    DELETE (3)
+    - Arguments handled correctly
+    - Removes the applicant from TA list
+
+Grader Feedback:
+- Possible to apply to non-existant courses
+
+
+List Courses and Applications
+-----------------------------
+: 8 / 8
+    GET /courses (6)
+    - prepares the data correctly
+    - sorting can be done on client or server
+    GET /courses?course=course (2)
+    - should reuse much of the code from the get all courses
+
+Grader Feedback:
+
+Views
+-----
+: 9 / 10
+    - The appropriate data is displayed on request
+    - The input fields necessary to complete each of the tasks work
+    - It is reasonbly easy to perform all the tasks
+
+Grader Feedback:
+- New applicant request should be in JSON format
+- Can't see full sidebar if window not tall enough
+
+
+Programming Style
+-----------------
+: 4 / 4
+    - code is organized appropriately
+    - code is easy to read, modular
+
+Grader Feedback:
+
+
+Creativity and/or Design
+------------------------
+: 4 / 4
+    - This could cover a lot of different things.  Examples include, but
+    are not limited to: proper testing, particularly good UI, thorough
+    error handling, extra features. Credit should be given for additional
+    features that students new to web programming achieve.
+    - If the basic functionality in incomplete or poor quality, then full
+    marks will not be given for this section.
+
+Grader Feedback:
+- Basic validation, nice UI
+
+--------
+TOTAL
+: 38 / 40
