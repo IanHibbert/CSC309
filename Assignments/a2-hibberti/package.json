@@ -1,0 +1,27 @@
+{
+  "name": "a2-hibberti",
+  "version": "1.0.0",
+  "description": "TA Application",
+  "main": "tapp.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-validator": "^2.21.0",
+    "normalize.css": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanHibbert/a2-hibberti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanHibbert/a2-hibberti/issues"
+  },
+  "homepage": "https://github.com/IanHibbert/a2-hibberti#readme"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "lab4-hibberti",
+  "version": "1.0.0",
+  "description": "Gain experience creating HTML forms whose data is validated using HTML5 validation on the client-side and, upon submit, sent via HTTP POST to a Node.js server where it is validated on the server-side.",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-validator": "^2.20.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanHibbert/lab4-hibberti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanHibbert/lab4-hibberti/issues"
+  },
+  "homepage": "https://github.com/IanHibbert/lab4-hibberti#readme"
+}

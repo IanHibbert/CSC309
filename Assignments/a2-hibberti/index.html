@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TA Application</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/scripts/applicants.js"></script>
+    <script src="assets/scripts/style.js"></script>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Proza+Libre:400,700|Varela+Round" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div class="applicants">
+        <ul>
+            <li id="all-applicants">Applicants</li>
+            <li id="app-by-status">
+                Applicants by Status
+                <ul id="dropdown-status" class="hidden">
+                    <li class="status">Undergrad</li>
+                    <li class="status">MSc</li>
+                    <li class="status">PhD</li>
+                    <li class="status">MScAc</li>
+                    <li class="status">MEng</li>
+                </ul>
+            </li>
+            <li id="search-family-name">Search By Family Name
+                <form id="search-fname" class="hidden">
+                    <label for="familyName-text"></label>
+                    <input type="text" id="familyName-text" placeholder="Family Name" required>
+                    <button>Search</button>
+                </form>
+            </li>
+
+            <li id="add-applicant">Add Applicant</li>
+            <li id="remove-applicant">
+                Remove Applicant
+                <form id="del-fname" class="hidden">
+                    <label for="del-fname-text"></label>
+                    <input type="text" id="del-fname-text" placeholder="Family Name" required>
+                    <button>Delete</button>
+                </form>
+
+                <form id="del-stunum" class="hidden">
+                    <label for="del-stunum-text"></label>
+                    <input type="text" id="del-stunum-text" placeholder="Student Number" required>
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <div class="courses">
+        <ul>
+            <li id="display-courses">Courses</li>
+            <li id="display-course">
+                Search for Course
+                <form id="search-course" class="hidden">
+                    <label for="search-course-text"></label>
+                    <input type="text" id="search-course-text" placeholder="Course Name" required>
+                    <button>Search</button>
+                </form>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <h1 class="title">TA Application System</h1>
+
+    <table id="applicants-table" class="hidden">
+        <tr class="table-headers">
+            <th>Given Name</th>
+            <th>Family Name</th>
+            <th>Status</th>
+            <th>Year</th>
+        </tr>
+    </table>
+
+    <!-- Applicant Modal -->
+    <div id="applicant-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="close-modal">x</span>
+            <table id="applicant-table" class="hidden">
+                <tr>
+                    <th id="gName">Given Name</th>
+                </tr>
+                <tr>
+                    <th id="fName">Family Name</th>
+                </tr>
+                <tr>
+                    <th id="stuNum">Student Number</th>
+                </tr>
+                <tr>
+                    <th id="year">Year</th>
+                </tr>
+                <tr>
+                    <th id="status">Status</th>
+                </tr>
+                <tr>
+                    <th id="courses">Courses</th>
+                </tr>
+            </table>
+
+            <form method="post" id="add-app-form" class="hidden">
+                <h2>Add Applicant</h2>
+
+                <div id="stuNum-group" class="form-group">
+                    <label for="add-stuNum">Student Number
+                        <input type="text" id="add-stuNum" pattern="[0-9]+" title="Enter a Number" required>
+                    </label>
+                </div>
+
+                <div id="gName-group" class="form-group">
+                    <label for="add-gName">Given Name
+                        <input type="text" id="add-gName" pattern="^[A-z]*$" title="Contains only letters" required>
+                        <br>
+                    </label>
+                </div>
+
+                <div id="fName-group" class="form-group">
+                    <label for="add-fName">Family Name </label>
+                    <input type="text" id="add-fName" pattern="^[a-zA-Z]*$" title="Contains only letters" required> <br
+                ></div>
+
+                <div id="status-group" class="form-group">
+                    <label for="add-status">Status </label>
+                    <input type="text" id="add-status" pattern="Undergrad|PhD|MSc|MScAc|MEng"
+                           title="(e.g. PhD, Undergrad, MSc, MScAc, MEng)" required> <br>
+                </div>
+
+                <div id="year-group" class="form-group">
+                    <label for="add-year">Year </label>
+                    <input type="text" id="add-year" pattern="[0-9]" title="Enter a Number" required> <br>
+                </div>
+
+                <h3>Courses</h3>
+                <div class="courses-group form-group">
+                    <label>
+                        Code
+                        <input type="text" name="code" required>
+                    </label>
+
+                    <label>
+                        Rank
+                        <input type="text" name="rank" pattern="[0-9]" title="Enter a Number" required>
+                    </label>
+
+                    <label>
+                        Experience
+                        <input type="text" name="experience" pattern="[0-9]" title="Enter a Number" required>
+                    </label>
+                </div>
+
+                <button id="add-course-btn" type="button">Add Another Course</button>
+                <button id="add-app-btn">Add Applicant</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div id="courses-table"></div>
+
+</div>
+</body>
+</html>

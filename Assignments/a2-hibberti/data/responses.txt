@@ -37,7 +37,8 @@ GET /applicant?fname=fname
     "givenname": "",
     "familyname": "",
     "status": "",
-    "year": ""
+    "year": "",
+    "courses": []
 }
 
 POST /applicant
